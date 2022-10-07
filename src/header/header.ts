@@ -1,6 +1,7 @@
 import { div, img, span } from "vilex"
 import { blockBackgroundColor } from "../color"
 import { nav } from "./nav"
+import logoImgUrl from '../assets/logo.png'
 
 export function header() {
   return div(
@@ -26,7 +27,7 @@ export function header() {
 function logoImg() {
   return img(
     {
-      src: 'src/assets/logo.png',
+      src: logoImgUrl,
       alt: 'logo'
     },
     {

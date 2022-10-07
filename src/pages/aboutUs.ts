@@ -1,12 +1,16 @@
 import { div, h2, img } from 'vilex';
 import { blockBackgroundColor } from '../color'
 
+import photo1Url from '../assets/zhaopin.jpg'
+import photo2Url from '../assets/wangxiaowei.jpg'
+import photo3Url from '../assets/yangyunlong.jpg'
+
 export function aboutUs() {
 
   const list = new Array(8)
-  list.fill({ name: '虚位以待', url: 'src/assets/zhaopin.jpg' })
-  list[0] = { name: '王晓维', url: 'src/assets/wangxiaowei.jpg' }
-  list[1] = { name: '杨云龙', url: 'src/assets/yangyunlong.jpg' }
+  list.fill({ name: '虚位以待', url: photo1Url })
+  list[0] = { name: '王晓维', url: photo2Url }
+  list[1] = { name: '杨云龙', url: photo3Url }
 
   return div(
     [
