@@ -1,4 +1,4 @@
-import { div, h2, img } from 'vilex';
+import { div, h2, iframe, img } from 'vilex';
 import { blockBackgroundColor } from '../color'
 
 import photo1Url from '../assets/zhaopin.jpg'
@@ -12,6 +12,16 @@ export function aboutUs() {
   list[0] = { name: '王晓维', url: photo2Url }
   list[1] = { name: '杨云龙', url: photo3Url }
 
+  return iframe(
+    {
+    src: 'https://github.com/vilex/vilex.github.io/graphs/contributors',
+    alt: 'v'
+  }, 
+  {
+    width: '100%',
+    height: '100%'
+  }
+  )
   return div(
     [
       div(
