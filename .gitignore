@@ -118,3 +118,7 @@ dist
 # github actions
 
 docs
+
+# scripts
+
+*.local.js

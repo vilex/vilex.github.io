@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite --port 3000",
-    "build": "vite build"
+    "build": "vite build",
+    "fetch-contributors": "node ./scripts/contributors.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@octokit/core": "^4.0.5",
+    "@types/node": "^18.8.3",
     "vite": "^3.1.4",
     "vite-vilex": "0.1.0"
   },
