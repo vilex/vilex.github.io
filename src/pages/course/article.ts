@@ -5,6 +5,7 @@ import { svgIconDoc } from './contents/svgIconDoc'
 import { routerDoc } from './contents/routerDoc'
 import { eventHandingDoc } from "./contents/eventHandingDoc"
 import { quickStartDoc } from "./contents/quickStartDoc"
+import { introductionDoc } from "./contents/introductionDoc"
 
 export function article() {
   return routerView([
@@ -13,6 +14,7 @@ export function article() {
     regRoute('/course/router', routerDoc),
     regRoute('/course/event-handing', eventHandingDoc),
     regRoute('/course/quick-start', quickStartDoc),
+    regRoute('/course/introduction', introductionDoc),
   ])
 }
 
