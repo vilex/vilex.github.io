@@ -51,7 +51,7 @@ export function quickStartDoc() {
       `),
       h3('子元素'),
       p(`
-        下载创建一个 ul 节点， 并且给 ul 节点添加多个 li 子节点
+        下面创建一个 ul 节点， 并且给 ul 节点添加多个 li 子节点
       `),
       code(`
         ul(
