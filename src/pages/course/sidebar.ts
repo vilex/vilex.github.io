@@ -7,7 +7,7 @@ interface Li {
 }
 
 const list: Li[] = [
-  { label: '快速使用', link: '/course/fast-use' },
+  { label: '快速使用', link: '/course/quick-start' },
   { label: '图标', link: '/course/svg-icon' },
   { label: '路由', link: '/course/router' },
   { label: '图片', link: '/course/image' }

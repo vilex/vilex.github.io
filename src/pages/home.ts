@@ -26,7 +26,7 @@ export function home() {
             '快速开始',
             {
               onclick() {
-                router.push('/course/fast-use')
+                router.push('/course/quick-start')
               }
             },
             {
@@ -44,14 +44,36 @@ export function home() {
           padding: '60px',
           borderRadius: '3px',
           marginTop: '30px',
-          boxShadow: `0 10px 40px -10px rgb(0 64 128 / 20%)`
+          boxShadow: `0 10px 40px -10px rgb(0 64 128 / 20%)`,
+          display: 'grid',
+          gridTemplateColumns: 'repeat(3, 33%)',
+          gap: '30px',
+          justifyContent: 'center'
         },
         [
-          p('网站开发中', {
-            lineHeight: '60px'
-          }),
+
+          Block(
+            '使用纯 Typescript 进行开发 '
+          ),
+          Block(
+            '在任意地方声明与使用组件'
+          ),
+          Block(
+            '语法简洁，使用灵活，可应对任何体量的项目'
+          )
         ]
       )
     ]
+  )
+}
+
+function Block(...items: ViHTMLDivElementPart[]) {
+  return div(
+    ...items,
+    {
+      backgroundColor: 'rgb(0 64 128 / 20%)',
+      width: '100%',
+      padding: '30px 0'
+    }
   )
 }

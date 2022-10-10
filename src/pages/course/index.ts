@@ -5,7 +5,7 @@ import { SideBar } from '../../components/sidebar/sidebar'
 export function course() {
   return div(
     {
-      padding: '0 60px',
+      padding: '60px',
       position: 'relative',
       display: 'flex',
       flexDirection: 'row',
@@ -32,7 +32,9 @@ export function course() {
           }
         ]
       ),
-      article()
+      article().set({
+        paddingLeft: '60px'
+      })
     ]
 
   )

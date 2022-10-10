@@ -36,7 +36,7 @@ export function SideBar(list: DataListItem[]) {
             )
         ),
         {
-            padding: '0 10px',
+            padding: '10px',
             lineHeight: '20px'
         }
     )

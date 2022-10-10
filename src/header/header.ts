@@ -17,8 +17,8 @@ export function header() {
       logoImg,
       nav([
         { text: '首页', link: '/' },
-        { text: '教程', link: '/course/fast-use' },
-        { text: '关于我们', link: '/about-us' },
+        { text: '教程', link: '/course/quick-start' },
+        { text: '贡献', link: '/about-us' },
       ])
     ]
   )

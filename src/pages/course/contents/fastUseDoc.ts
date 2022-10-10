@@ -3,14 +3,16 @@ import { code } from '../../../common/code'
 export function fastUseDoc() {
   return div(
     [
-      h3(`通过 cli 快速创建一个基础项目(以 vilex-app 作为项目名)`),
-      code(`npx create-vilex-app vilex-app`),
-      h3(`cli 执行完成后，进入创建的项目`),
-      code(`cd vilex-app`),
-      h3(`安装项目依赖`),
-      code(`pnpm install`),
-      h3(`运行项目`),
-      code(`pnpm dev`),
+      h3(`通过命令行快速创建一个基础的模板项目`),
+      code(`
+        npx create-vilex-app <project-direction>
+        
+        // 创建完成后，进入项目
+        cd <project-direction>
+
+        // 安装依赖，并运行
+        pnpm install && pnpm dev
+      `)
     ]
   )
 }
