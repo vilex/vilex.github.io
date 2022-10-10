@@ -11,3 +11,9 @@ body {
     background-color: rgb(246, 246, 246);
     color: rgba(0, 0, 0, 0.85);
 }
+
+/*  */
+
+.link:hover {
+    color: #42b883;
+}

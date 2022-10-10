@@ -1,17 +1,19 @@
 import { div, h3, p } from 'vilex'
 import { blockBackgroundColor } from '../../color'
-import { sidebar } from './sidebar'
 import { article } from './article'
 import { SideBar } from '../../components/sidebar/sidebar'
 export function course() {
   return div(
     {
       padding: '0 60px',
-      position: 'relative'
+      position: 'relative',
+      display: 'flex',
+      flexDirection: 'row',
+      backgroundColor: 'white',
+    minHeight: '600px',
+    boxShadow: `0 10px 40px -10px rgb(0 64 128 / 20%)`,
     },
     [
-      // sidebar(),
-
       SideBar(
         [
           {
