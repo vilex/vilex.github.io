@@ -30,6 +30,12 @@ export function course() {
               { name: '事件处理', path: '/course/event-handing'},
               { name: '响应式', path: '/course/reactivity'},
             ]
+          },
+          {
+            name: '路由',
+            list: [
+              {name: '路由', path: '/course/router'}
+            ]
           }
         ]
       ),
