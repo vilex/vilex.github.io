@@ -6,6 +6,7 @@ import { routerDoc } from './contents/routerDoc'
 import { eventHandingDoc } from "./contents/eventHandingDoc"
 import { quickStartDoc } from "./contents/quickStartDoc"
 import { introductionDoc } from "./contents/introductionDoc"
+import { reactiveityDoc } from "./contents/reactivityDoc"
 
 export function article() {
   return routerView([
@@ -15,7 +16,7 @@ export function article() {
     regRoute('/course/event-handing', eventHandingDoc),
     regRoute('/course/quick-start', quickStartDoc),
     regRoute('/course/introduction', introductionDoc),
-    regRoute('/course/reactivity', reactivityDoc),
+    regRoute('/course/reactivity', reactiveityDoc),
   ])
 }
 
