@@ -27,7 +27,8 @@ export function course() {
             name: '基础',
             list: [
               { name: '创建应用', path: '/course/application'},
-              { name: '事件处理', path: '/course/event-handing'}
+              { name: '事件处理', path: '/course/event-handing'},
+              { name: '响应式', path: '/course/reactivity'},
             ]
           }
         ]
