@@ -1,7 +1,7 @@
 const { writeFileSync } = require('fs')
 const { resolve } = require('path')
 const { Octokit } = require('@octokit/core')
-const { token } = require('./ token.local')
+const { token } = require('./token.local')
 const octokit = new Octokit( { auth: token } )
 
 
