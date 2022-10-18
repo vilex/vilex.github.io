@@ -21,7 +21,7 @@ export const contributors = [
     "received_events_url": "https://api.github.com/users/wxize/received_events",
     "type": "User",
     "site_admin": false,
-    "contributions": 10
+    "contributions": 11
   },
   {
     "login": "vilex",
@@ -84,7 +84,7 @@ export const contributors = [
     "received_events_url": "https://api.github.com/users/vilex/received_events",
     "type": "User",
     "site_admin": false,
-    "contributions": 2
+    "contributions": 6
   },
   {
     "login": "wxize",
@@ -105,28 +105,49 @@ export const contributors = [
     "received_events_url": "https://api.github.com/users/wxize/received_events",
     "type": "User",
     "site_admin": false,
-    "contributions": 1
+    "contributions": 6
   },
   {
-    "login": "SonyZ2",
+    "login": "Mr-Yanjinjin",
     "id": 26398552,
     "node_id": "MDQ6VXNlcjI2Mzk4NTUy",
     "avatar_url": "https://avatars.githubusercontent.com/u/26398552?v=4",
     "gravatar_id": "",
-    "url": "https://api.github.com/users/SonyZ2",
-    "html_url": "https://github.com/SonyZ2",
-    "followers_url": "https://api.github.com/users/SonyZ2/followers",
-    "following_url": "https://api.github.com/users/SonyZ2/following{/other_user}",
-    "gists_url": "https://api.github.com/users/SonyZ2/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/SonyZ2/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/SonyZ2/subscriptions",
-    "organizations_url": "https://api.github.com/users/SonyZ2/orgs",
-    "repos_url": "https://api.github.com/users/SonyZ2/repos",
-    "events_url": "https://api.github.com/users/SonyZ2/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/SonyZ2/received_events",
+    "url": "https://api.github.com/users/Mr-Yanjinjin",
+    "html_url": "https://github.com/Mr-Yanjinjin",
+    "followers_url": "https://api.github.com/users/Mr-Yanjinjin/followers",
+    "following_url": "https://api.github.com/users/Mr-Yanjinjin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Mr-Yanjinjin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Mr-Yanjinjin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Mr-Yanjinjin/subscriptions",
+    "organizations_url": "https://api.github.com/users/Mr-Yanjinjin/orgs",
+    "repos_url": "https://api.github.com/users/Mr-Yanjinjin/repos",
+    "events_url": "https://api.github.com/users/Mr-Yanjinjin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Mr-Yanjinjin/received_events",
     "type": "User",
     "site_admin": false,
-    "contributions": 1
+    "contributions": 5
+  },
+  {
+    "login": "yyl5710",
+    "id": 22700575,
+    "node_id": "MDQ6VXNlcjIyNzAwNTc1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22700575?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/yyl5710",
+    "html_url": "https://github.com/yyl5710",
+    "followers_url": "https://api.github.com/users/yyl5710/followers",
+    "following_url": "https://api.github.com/users/yyl5710/following{/other_user}",
+    "gists_url": "https://api.github.com/users/yyl5710/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/yyl5710/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/yyl5710/subscriptions",
+    "organizations_url": "https://api.github.com/users/yyl5710/orgs",
+    "repos_url": "https://api.github.com/users/yyl5710/repos",
+    "events_url": "https://api.github.com/users/yyl5710/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/yyl5710/received_events",
+    "type": "User",
+    "site_admin": false,
+    "contributions": 2
   }
 ]
             }

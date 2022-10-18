@@ -6,7 +6,7 @@ specifiers:
   vilex: 0.0.6
   vilex-router: ^0.0.3
   vite: ^3.1.4
-  vite-vilex: ^0.1.3
+  vite-vilex: ^0.1.4
 
 dependencies:
   vilex: 0.0.6
@@ -16,7 +16,7 @@ devDependencies:
   '@octokit/core': 4.0.5
   '@types/node': 18.8.3
   vite: 3.1.4
-  vite-vilex: 0.1.3
+  vite-vilex: 0.1.4
 
 packages:
 
@@ -689,8 +689,8 @@ packages:
       csstype: 3.1.1
     dev: false
 
-  /vite-vilex/0.1.3:
-    resolution: {integrity: sha512-ByjZPCFdcmiQ8Nz48FH4b2yrhCkx+Q5K9TqoTTHk7MWfkv6SLk+TnJlKvd7+ZZinBAYX1miryDB7lwxfw/PBrQ==}
+  /vite-vilex/0.1.4:
+    resolution: {integrity: sha512-ESJGz99BON94APBEJ735NVeGB44+BxUYzXxN+EkQVQLVunHTacT+sry3uRKxyPtQxUDkLZ3eI7ODDotIJWEc4g==}
     dependencies:
       '@babel/generator': 7.19.5
       '@babel/parser': 7.19.4
