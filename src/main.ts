@@ -1,27 +1,21 @@
 import { button, createApp, div, hr, img, input, ref, span, store, svg } from "vilex"
-import { nav } from "./header/nav"
-import { header } from "./header/header"
 import { createRouter, regRoute, routerView } from "vilex-router"
-import { home } from "./pages/home"
 import './normal.css'
-import { course } from "./pages/course"
-import { aboutUs } from "./pages/aboutUs"
+import { PC } from "./entries/PC"
+import { MB } from "./entries/MB"
+
+
+
+
 
 function App() {
-    return div(
-        {
-            margin: `0 auto`
-        },
-        [
-            header(),
-            routerView([
-                regRoute('/home', home, true),
-                regRoute('/course', course),
-                regRoute('/about-us', aboutUs)
-            ])
-        ]
-    )
+
+    return window.innerWidth > window.innerHeight
+    ? PC()
+    : MB()
 }
+
+
 
 createApp(App).use(createRouter()).mount('#app')
 
