@@ -10,7 +10,6 @@ import { aboutUs } from "./pages/aboutUs"
 function App() {
     return div(
         {
-            width: `1200px`,
             margin: `0 auto`
         },
         [

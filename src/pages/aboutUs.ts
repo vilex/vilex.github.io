@@ -11,6 +11,9 @@ export function aboutUs() {
   // console.log(contributors)
 
   return div(
+    {
+      padding: `15px`
+    },
     contributors.map(
       item => div(
         [
