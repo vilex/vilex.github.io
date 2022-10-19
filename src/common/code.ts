@@ -10,7 +10,8 @@ export function code(str: string) {
       fontWeight: 600,
       letterSpacing: '1px',
       textAlign: 'left',
-      padding: '0 30px'
+      padding: '0 30px',
+      overflowX: 'auto'
     },
     str
   )
