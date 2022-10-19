@@ -12,10 +12,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@octokit/core": "^4.0.5",
-    "@types/node": "^18.8.3",
-    "vite": "^3.1.4",
-    "vite-vilex": "^0.1.4"
+    "@octokit/core": "^4.1.0",
+    "@types/node": "^18.11.2",
+    "vite": "^3.1.8",
+    "vite-vilex": "^0.1.6"
   },
   "dependencies": {
     "vilex": "0.0.6",

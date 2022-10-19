@@ -17,6 +17,7 @@ export function article() {
     regRoute('/course/quick-start', quickStartDoc),
     regRoute('/course/introduction', introductionDoc),
     regRoute('/course/reactivity', reactiveityDoc),
+    regRoute('/course/router', routerDoc),
   ])
 }
 

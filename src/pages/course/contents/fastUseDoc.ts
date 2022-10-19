@@ -5,13 +5,13 @@ export function fastUseDoc() {
     [
       h3(`通过命令行快速创建一个基础的模板项目`),
       code(`
-        npx create-vilex-app <project-direction>
-        
-        // 创建完成后，进入项目
-        cd <project-direction>
+npx create-vilex-app <project-direction>
 
-        // 安装依赖，并运行
-        pnpm install && pnpm dev
+// 创建完成后，进入项目
+cd <project-direction>
+
+// 安装依赖，并运行
+pnpm install && pnpm dev
       `)
     ]
   )

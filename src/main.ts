@@ -5,12 +5,9 @@ import { PC } from "./entries/PC"
 import { MB } from "./entries/MB"
 
 
-
-
-
+let h = window.innerWidth > window.innerHeight
 function App() {
-
-    return window.innerWidth > window.innerHeight
+    return h
     ? PC()
     : MB()
 }
@@ -18,4 +15,13 @@ function App() {
 
 
 createApp(App).use(createRouter()).mount('#app')
+
+
+window.addEventListener('resize', () => {
+    const nh = window.innerWidth > window.innerHeight
+    if (h != nh) {
+        h = nh
+        window.location.reload()
+    }
+})
 

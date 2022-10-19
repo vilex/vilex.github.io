@@ -5,18 +5,18 @@ export function reactiveityDoc() {
     [
       h3(`响应式`),
       code(`
-        const count = ref(1)
+const count = ref(1)
 
-        span(count)
+span(count)
 
-        button(
-            '点击加1',
-            {
-                onclick() {
-                    count.value ++
-                }
-            }
-        )
+button(
+    '点击加1',
+    {
+        onclick() {
+            count.value ++
+        }
+    }
+)
       `)
     ]
   )

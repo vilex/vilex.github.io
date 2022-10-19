@@ -1,7 +1,8 @@
-import { div, img, span } from "vilex"
+import { a, div, img, span } from "vilex"
 import { blockBackgroundColor } from "../color"
 import { nav } from "./nav"
 import logoImgUrl from '../assets/logo.png'
+import githubSvg from '../assets/github.svg'
 
 export function header() {
   return div(
@@ -15,11 +16,42 @@ export function header() {
     },
     [
       logoImg,
-      nav([
-        { text: '首页', link: '/' },
-        { text: '教程', link: '/course/quick-start' },
-        { text: '贡献', link: '/about-us' },
-      ])
+      div(
+        {
+          display: 'flex',
+          flexDirection: "row",
+          alignItems: "center",
+        },
+        [
+          nav([
+            { text: '首页', link: '/' },
+            { text: '教程', link: '/course/quick-start' },
+            { text: '贡献', link: '/about-us' },
+          ]),
+          a(
+            {
+              href: 'https://github.com/vilex/vilex',
+              target: '_blank'
+            },
+            {
+              marginLeft: '20px'
+            },
+            [
+              img(
+                {
+                  alt: 'github',
+                  src: githubSvg
+                },
+                {
+                  width: '24px',
+                  height: '24px'
+                }
+
+              )
+            ]
+          )
+        ]
+      )
     ]
   )
 }
