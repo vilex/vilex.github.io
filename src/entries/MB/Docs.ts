@@ -8,7 +8,6 @@ import { routerDoc } from "../../pages/course/contents/routerDoc"
 export function Docs() {
   return div(
     [
-
       fastUseDoc(),
       hr({
         opacity: 0.6,
@@ -35,7 +34,7 @@ export function Docs() {
       padding: '60px',
       backgroundColor: 'rgba(255,255,255,.8)',
       margin: '60px 3%',
-      boxShadow: `0 10px 40px -10px rgb(0 64 128 / 20%)`
+      // boxShadow: `0 10px 40px -10px rgb(0 64 128 / 20%)`
     }
   )
 }

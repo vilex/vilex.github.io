@@ -1,6 +1,8 @@
 import { button, div, h1, img, p } from "vilex"
 import { router } from "vilex-router"
 import { blockBackgroundColor } from "../color"
+import logoUrl from '../assets/logo.svg'
+import { Button } from "../components/Button"
 
 export function home() {
   return div(
@@ -15,23 +17,36 @@ export function home() {
           padding: '60px',
           borderRadius: '3px',
           marginTop: '30px',
-          boxShadow: `0 10px 40px -10px rgb(0 64 128 / 20%)`
+          // boxShadow: `0 10px 40px -10px rgb(0 64 128 / 20%)`
         },
         [
-          h1('vilex'),
-          p('用于构建用户界面的 javascript 库', {
-            lineHeight: '60px'
-          }),
-          button(
-            '快速开始',
+          img(
+            {
+              alt: 'vilex logo',
+              src: logoUrl,
+            },
+            {
+              width: '300px',
+              height: 'auto'
+            }
+          ),
+          p('用于构建用户界面的 web 框架',
+            {
+              lineHeight: '60px',
+              letterSpacing: '0.2rem',
+              fontSize: '1.5rem',
+              background: `-webkit-linear-gradient(315deg, rgba(66, 211, 146, 0.3) 25%, rgba(151, 113, 246,0.3))`
+            }
+          ),
+          Button(
+            'GET START',
             {
               onclick() {
                 router.push('/course/quick-start')
               }
             },
             {
-              padding: '4px 16px',
-              fontWeight: 'bold'
+              marginTop: '80px'
             }
           )
         ]
@@ -43,12 +58,13 @@ export function home() {
           backgroundColor: blockBackgroundColor,
           padding: '60px',
           borderRadius: '3px',
-          marginTop: '30px',
-          boxShadow: `0 10px 40px -10px rgb(0 64 128 / 20%)`,
+          marginTop: '100px',
+          // boxShadow: `0 10px 40px -10px rgb(0 64 128 / 20%)`,
           display: 'grid',
           gridTemplateColumns: 'repeat(3, 33%)',
           gap: '30px',
-          justifyContent: 'center'
+          justifyContent: 'center',
+
         },
         [
 
@@ -71,9 +87,21 @@ function Block(...items: ViHTMLDivElementPart[]) {
   return div(
     ...items,
     {
-      backgroundColor: 'rgb(0 64 128 / 20%)',
+      display: 'flex',
+      flexDirection: "column",
+      justifyContent: 'center',
+      alignItems: "center",
+      backgroundColor: 'rgb(187 190 193 / 20%)',
       width: '100%',
-      padding: '30px 0'
+      height: '300px',
+      padding: '30px 0',
+      borderRadius: '8px',
+      backgroundImage: 'radial-gradient(white, #f0f0f0)',
+      border: '5px solid #cfe7e9',
+      letterSpacing: '2px',
+      fontSize: '16px',
+      fontWeight: 'bold',
+      color: 'rgb(0 0 0 / 68 %)'
     }
   )
 }

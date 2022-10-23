@@ -21,13 +21,23 @@ export function sidebar() {
       width: '80px',
       padding: '10px',
       backgroundColor: 'white',
-      boxShadow: `0 10px 40px -10px rgb(0 64 128 / 20%)`
+      // boxShadow: `0 10px 40px -10px rgb(0 64 128 / 20%)`
     },
     list.map(item => li(
       item.label,
       {
         onclick() {
           router.push(item.link)
+        },
+        onmouseenter({ vn }) {
+          vn.set({
+            opacity: 0.1
+          })
+        },
+        onmouseleave({ vn }) {
+          vn.set({
+            opacity: 1
+          })
         }
       },
       {

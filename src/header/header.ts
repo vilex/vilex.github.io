@@ -1,7 +1,7 @@
 import { a, div, img, span } from "vilex"
 import { blockBackgroundColor } from "../color"
 import { nav } from "./nav"
-import logoImgUrl from '../assets/logo.png'
+import logoImgUrl from '../assets/logo.svg'
 import githubSvg from '../assets/github.svg'
 
 export function header() {
@@ -63,7 +63,7 @@ function logoImg() {
       alt: 'logo'
     },
     {
-      height: '32px',
+      height: '80px',
       width: 'auto'
     }
   )

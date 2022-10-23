@@ -37,14 +37,14 @@ export function SideBar(list: DataListItem[]) {
         ),
         {
             padding: '10px',
-            lineHeight: '20px'
+            lineHeight: '30px'
         }
     )
 }
 
 
 function Title(text: string) {
-    return span(text, { fontSize: '12px', fontWeight: '600', color: 'black', whiteSpace: 'nowrap' })
+    return span(text, { fontWeight: '600', color: 'black', whiteSpace: 'nowrap' })
 }
 
 
@@ -54,19 +54,34 @@ function Link(data: DataListItemLink, store: SideBarStore) {
         data.name,
         ['link'],
         {
-            fontSize: '12px',
+            // fontSize: '12px',
             color: '#666',
             cursor: 'pointer',
-            whiteSpace: 'nowrap'
+            whiteSpace: 'nowrap',
+            marginLeft: '12px'
         },
         {
             onclick({ vn }) {
                 router.push(data.path)
                 if (store.current) {
-                    store.current.set({ color: '#666' })
+                    store.current.set({ color: '#666', fontWeight: 'normal' })
                 }
-                vn.set({ color: `#42b883` })
+                vn.set({ color: `#42b883`, fontWeight: 'bold' })
                 store.current = vn
+            },
+            onmouseenter({ vn }) {
+                vn.set({
+                    fontWeight: "bold",
+                    color: '#42b883'
+                })
+            },
+            onmouseleave({ vn }) {
+                if (vn !== store.current) {
+                    vn.set({
+                        fontWeight: 'normal',
+                        color: '#666'
+                    })
+                }
             }
         }
     )
@@ -74,7 +89,7 @@ function Link(data: DataListItemLink, store: SideBarStore) {
     const hash = window.location.hash.slice(1)
 
     if (hash == data.path) {
-        link.set({ color: `#42b883` })
+        link.set({ color: `#42b883`, fontWeight: "bold" })
         store.current = link
     }
 

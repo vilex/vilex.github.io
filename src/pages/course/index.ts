@@ -1,47 +1,31 @@
+import { ViElement } from 'vilex'
+import { sidebarList } from './../../data/course.data'
 import { div, h3, p } from 'vilex'
 import { blockBackgroundColor } from '../../color'
 import { article } from './article'
 import { SideBar } from '../../components/sidebar/sidebar'
+import { PageRouter } from '../../docs/components/PageRouter'
+
 export function course() {
+
+  const routes: { path: string, component: () => ViElement }[] = []
+  sidebarList.forEach(item => {
+    item.list.forEach(item => routes.push(item))
+  })
   return div(
     {
       padding: '60px',
       position: 'relative',
       display: 'flex',
       flexDirection: 'row',
-      backgroundColor: 'white',
-    minHeight: '600px',
-    boxShadow: `0 10px 40px -10px rgb(0 64 128 / 20%)`,
+      minHeight: '600px',
     },
     [
-      SideBar(
-        [
-          {
-            name: '开始',
-            list: [
-              { name: '简介', path: '/course/introduction'},
-              { name: '快速上手', path: '/course/quick-start'},
-            ]
-          },
-          {
-            name: '基础',
-            list: [
-              { name: '创建应用', path: '/course/application'},
-              { name: '事件处理', path: '/course/event-handing'},
-              { name: '响应式', path: '/course/reactivity'},
-            ]
-          },
-          {
-            name: '路由',
-            list: [
-              {name: '路由', path: '/course/router'}
-            ]
-          }
-        ]
-      ),
-      article().set({
-        paddingLeft: '60px'
-      })
+      SideBar(sidebarList),
+      // article().set({
+      //   paddingLeft: '60px'
+      // }),
+      PageRouter(routes)
     ]
 
   )

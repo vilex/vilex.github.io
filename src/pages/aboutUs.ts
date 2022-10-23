@@ -34,7 +34,7 @@ export function aboutUs() {
                 span(item.login, { marginLeft: '30px'})
               ],
               {
-                boxShadow: `0 10px 40px -10px rgb(0 64 128 / 20%)`,
+                // boxShadow: `0 10px 40px -10px rgb(0 64 128 / 20%)`,
                 display: 'flex',
                 flexDirection: 'row',
                 alignItems: 'center'
