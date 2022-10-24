@@ -115,10 +115,6 @@ dist
 .yarn/build-state.yml
 .pnp.*
 
-# github actions
-
-docs
-
 # scripts
 
 *.local.js
