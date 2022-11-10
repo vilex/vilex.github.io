@@ -15,7 +15,7 @@ export function PC() {
             header(),
             routerView([
                 regRoute('/home', home, true),
-                regRoute('/course', course),
+                regRoute('/d', course),
                 regRoute('/about-us', aboutUs)
             ])
         ]

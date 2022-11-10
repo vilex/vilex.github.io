@@ -1,0 +1,208 @@
+.markdown-theme {
+  font-family: "SF UI Display", ".PingFang SC", "PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;
+  font-size: 16px;
+  color: #222;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 1rem;
+  line-height: 2rem;
+  /* Solarized Green */
+  /* Solarized Cyan */
+  /* Solarized Blue */
+  /* Solarized Yellow */
+  /* Solarized Orange */
+  /* Solarized Red */
+  /* Solarized Violet */
+}
+.markdown-theme h1,
+.markdown-theme h2,
+.markdown-theme h3,
+.markdown-theme h4,
+.markdown-theme h5,
+.markdown-theme h6 {
+  font-family: "PT Sans", "SF UI Display", ".PingFang SC", "PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;
+  text-rendering: optimizelegibility;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: #ff3399;
+}
+.markdown-theme h1,
+.markdown-theme h2 {
+  position: relative;
+}
+.markdown-theme h1 {
+  font-size: 1.3rem;
+}
+.markdown-theme h2 {
+  font-size: 1.2rem;
+}
+.markdown-theme h3 {
+  font-size: 1.1rem;
+}
+.markdown-theme h4 {
+  font-size: 1rem;
+}
+.markdown-theme h5 {
+  font-size: 0.9rem;
+}
+.markdown-theme h6 {
+  font-size: 0.8rem;
+}
+.markdown-theme table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-top: 0.8rem;
+  margin-bottom: 1.4rem;
+}
+.markdown-theme tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+.markdown-theme th,
+.markdown-theme td {
+  padding: 5px 14px;
+  border: 1px solid #ddd;
+}
+.markdown-theme blockquote {
+  font-style: italic;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  padding-left: 1em;
+  border-left: 4px solid #d5d5d5;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 1.5rem;
+}
+.markdown-theme a {
+  color: #01a9e1;
+}
+.markdown-theme a:hover {
+  color: #00ced1;
+}
+.markdown-theme pre,
+.markdown-theme code,
+.markdown-theme p code,
+.markdown-theme li code {
+  font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
+  line-height: 2;
+}
+.markdown-theme pre {
+  border-radius: 0.4em;
+  line-height: 1.45em;
+  font-size: 0.9rem;
+  margin-bottom: 2.1em;
+  padding: 0.8em 1em;
+  overflow: auto;
+  background-color: #f5f5ff;
+  color: #44425e;
+}
+.markdown-theme p code,
+.markdown-theme li code {
+  display: inline-block;
+  white-space: no-wrap;
+  background: #f2f2f7;
+  font-size: 0.9rem;
+  line-height: 1.5em;
+  color: #00ced1;
+  border-radius: 0.4em;
+  padding: 0 0.3em;
+  margin: -1px 4px;
+}
+.markdown-theme p pre code,
+.markdown-theme li pre code {
+  font-size: 1em !important;
+  background: none;
+  border: none;
+}
+.markdown-theme img {
+  max-width: 100%;
+  border-radius: 0.3em;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 1px 4px;
+  box-sizing: border-box;
+  border: #fff 0.5em solid;
+}
+.markdown-theme hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+.markdown-theme .hljs-comment,
+.markdown-theme .diff .hljs-header,
+.markdown-theme .hljs-doctype,
+.markdown-theme .hljs-pi,
+.markdown-theme .lisp .hljs-string {
+  color: #93a1a1;
+}
+.markdown-theme .hljs-keyword,
+.markdown-theme .hljs-winutils,
+.markdown-theme .method,
+.markdown-theme .hljs-addition,
+.markdown-theme .css .hljs-tag,
+.markdown-theme .hljs-request,
+.markdown-theme .hljs-status,
+.markdown-theme .nginx .hljs-title {
+  color: #859900;
+}
+.markdown-theme .hljs-number,
+.markdown-theme .hljs-command,
+.markdown-theme .hljs-string,
+.markdown-theme .hljs-tag .hljs-value,
+.markdown-theme .hljs-rule .hljs-value,
+.markdown-theme .hljs-doctag,
+.markdown-theme .tex .hljs-formula,
+.markdown-theme .hljs-regexp,
+.markdown-theme .hljs-hexcolor,
+.markdown-theme .hljs-link_url {
+  color: #2aa198;
+}
+.markdown-theme .hljs-title,
+.markdown-theme .hljs-localvars,
+.markdown-theme .hljs-chunk,
+.markdown-theme .hljs-decorator,
+.markdown-theme .hljs-built_in,
+.markdown-theme .hljs-identifier,
+.markdown-theme .vhdl .hljs-literal,
+.markdown-theme .hljs-id,
+.markdown-theme .css .hljs-function,
+.markdown-theme .hljs-name {
+  color: #268bd2;
+}
+.markdown-theme .hljs-attribute,
+.markdown-theme .hljs-variable,
+.markdown-theme .lisp .hljs-body,
+.markdown-theme .smalltalk .hljs-number,
+.markdown-theme .hljs-constant,
+.markdown-theme .hljs-class .hljs-title,
+.markdown-theme .hljs-parent,
+.markdown-theme .hljs-type,
+.markdown-theme .hljs-link_reference {
+  color: #b58900;
+}
+.markdown-theme .hljs-preprocessor,
+.markdown-theme .hljs-preprocessor .hljs-keyword,
+.markdown-theme .hljs-pragma,
+.markdown-theme .hljs-shebang,
+.markdown-theme .hljs-symbol,
+.markdown-theme .hljs-symbol .hljs-string,
+.markdown-theme .diff .hljs-change,
+.markdown-theme .hljs-special,
+.markdown-theme .hljs-attr_selector,
+.markdown-theme .hljs-subst,
+.markdown-theme .hljs-cdata,
+.markdown-theme .css .hljs-pseudo,
+.markdown-theme .hljs-header {
+  color: #cb4b16;
+}
+.markdown-theme .hljs-deletion,
+.markdown-theme .hljs-important {
+  color: #dc322f;
+}
+.markdown-theme .hljs-link_label {
+  color: #6c71c4;
+}
+.markdown-theme .tex .hljs-formula {
+  background: #eee8d5;
+}

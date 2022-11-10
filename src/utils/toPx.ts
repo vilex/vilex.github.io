@@ -1,0 +1,1 @@
+export const toPx = (value: unknown) => value ? value + 'px' : '0px'

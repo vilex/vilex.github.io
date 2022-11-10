@@ -13,12 +13,15 @@
   "license": "ISC",
   "devDependencies": {
     "@octokit/core": "^4.1.0",
+    "@types/markdown-it": "^12.2.3",
     "@types/node": "^18.11.2",
     "vite": "^3.1.8",
-    "vite-vilex": "^0.1.6"
+    "vite-vilex": "^0.1.8"
   },
   "dependencies": {
-    "vilex": "0.0.6",
-    "vilex-router": "^0.0.3"
+    "highlight.js": "^11.6.0",
+    "markdown-it": "^13.0.1",
+    "vilex": "0.0.9",
+    "vilex-router": "link:../vilex/packages/vilex-router"
   }
 }
