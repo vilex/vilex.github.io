@@ -46,10 +46,8 @@ const SidebarItem = (data: RouteData) => div( data.title, SidebarItemStyle )
   
 
 const setActive = (curr: ViElement, last: ViElement | null) => {
-  console.log(`last`, last)
   if (last) {
     last.set({ color: 'rgba(0,0,0,.9)' })
-    console.log('ssss')
   }
   curr.set({ color: '#ff3399'})
   return last = curr

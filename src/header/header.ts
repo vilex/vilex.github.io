@@ -25,7 +25,7 @@ export function header() {
         [
           nav([
             { text: '首页', link: '/' },
-            { text: '教程', link: '/course/quick-start' },
+            { text: '教程', link: '/d/quick-start' },
             { text: '贡献', link: '/about-us' },
           ]),
           a(

@@ -42,7 +42,7 @@ export function home() {
             'GET START',
             {
               onclick() {
-                router.push('/course/quick-start')
+                router.push('/d/quick-start')
               }
             },
             {
