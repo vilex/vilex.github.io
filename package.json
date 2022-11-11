@@ -22,6 +22,6 @@
     "highlight.js": "^11.6.0",
     "markdown-it": "^13.0.1",
     "vilex": "0.0.9",
-    "vilex-router": "link:../vilex/packages/vilex-router"
+    "vilex-router": "^0.0.5"
   }
 }

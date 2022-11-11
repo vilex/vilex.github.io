@@ -7,7 +7,7 @@ specifiers:
   highlight.js: ^11.6.0
   markdown-it: ^13.0.1
   vilex: 0.0.9
-  vilex-router: link:../vilex/packages/vilex-router
+  vilex-router: ^0.0.5
   vite: ^3.1.8
   vite-vilex: ^0.1.8
 
@@ -15,7 +15,7 @@ dependencies:
   highlight.js: 11.6.0
   markdown-it: 13.0.1
   vilex: 0.0.9
-  vilex-router: link:../vilex/packages/vilex-router
+  vilex-router: 0.0.5
 
 devDependencies:
   '@octokit/core': 4.1.0
@@ -95,6 +95,13 @@ packages:
     dependencies:
       '@babel/types': 7.19.4
     dev: true
+
+  /@babel/runtime/7.20.1:
+    resolution: {integrity: sha512-mrzLkl6U9YLF8qpqI7TB82PESyEGjm/0Ly91jG575eVxMMlb8fYfOXFZIJ8XfLrJZQbm7dlKry2bJmXBUEkdFg==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.13.10
+    dev: false
 
   /@babel/template/7.18.10:
     resolution: {integrity: sha512-TI+rCtooWHr3QJ27kJxfjutghu44DLnasDMwpDqCXVTal9RLp3RSYNh4NdBrRP2cQAoG9A8juOQl6P6oZG4JxA==}
@@ -582,6 +589,12 @@ packages:
     engines: {node: '>=12.0.0'}
     dev: false
 
+  /history/5.3.0:
+    resolution: {integrity: sha512-ZqaKwjjrAYUYfLG+htGaIIZ4nioX2L70ZUMIFysS3xvBsSG4x/n1V6TXV3N8ZYNuFGlDirFg32T7B6WOUPDYcQ==}
+    dependencies:
+      '@babel/runtime': 7.20.1
+    dev: false
+
   /is-core-module/2.11.0:
     resolution: {integrity: sha512-RRjxlvLDkD1YJwDbroBHMb+cukurkDWNyHx7D3oNB5x9rb5ogcksMC5wHCadcXoo67gVr/+3GFySh3134zi6rw==}
     dependencies:
@@ -669,6 +682,10 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
+  /regenerator-runtime/0.13.10:
+    resolution: {integrity: sha512-KepLsg4dU12hryUO7bp/axHAKvwGOCV0sGloQtpagJ12ai+ojVDqkeGSiRX1zlq+kjIMZ1t7gpze+26QqtdGqw==}
+    dev: false
+
   /resolve/1.22.1:
     resolution: {integrity: sha512-nBpuuYuY5jFsli/JIs1oldw6fOQCBioohqWZg/2hiaOybXOft4lonv85uDOKXdf8rhyK159cxU5cDcK/NKk8zw==}
     hasBin: true
@@ -723,6 +740,13 @@ packages:
   /universal-user-agent/6.0.0:
     resolution: {integrity: sha512-isyNax3wXoKaulPDZWHQqbmIx1k2tb9fb3GGDBRxCscfYV2Ch7WxPArBsFEG8s/safwXTT7H4QGhaIkTp9447w==}
     dev: true
+
+  /vilex-router/0.0.5:
+    resolution: {integrity: sha512-VM+2VJ2T+LzPT/+KT6w3aKukDaBck+rHF84WuzIu0sRi7yYemLrLG875quPFSJtAAUIRZ2BtVgiidaA63hbz/g==}
+    dependencies:
+      history: 5.3.0
+      vilex: 0.0.9
+    dev: false
 
   /vilex/0.0.9:
     resolution: {integrity: sha512-JDQPQmP2GYSQXpRl+aiQyPu1f876rKRxzoLOcMD96Hcq4SEeVH2qDNKIboGJTjJnUAw1WkyY9t18RqFV5RQ31w==}
