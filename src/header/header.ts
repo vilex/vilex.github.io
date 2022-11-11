@@ -15,7 +15,7 @@ export function header() {
       boxSizing: 'border-box',
     },
     [
-      logoImg,
+      logoImg(),
       div(
         {
           display: 'flex',
@@ -65,21 +65,6 @@ function logoImg() {
     {
       height: '80px',
       width: 'auto'
-    }
-  )
-}
-
-/**
- * @deprecated logo - 纯文字
- */
-function logo() {
-  return span(
-    'vilex',
-    {
-      fontSize: '16px',
-      fontWeight: 'bold',
-      fontFamily: 'monospace',
-      textShadow: '0 0 3px #FF0000'
     }
   )
 }

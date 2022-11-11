@@ -44,7 +44,6 @@ const SidebarItemStyle = css`
 `
 const SidebarItem = (data: RouteData) => div( data.title, SidebarItemStyle )
   
-
 const setActive = (curr: ViElement, last: ViElement | null) => {
   if (last) {
     last.set({ color: 'rgba(0,0,0,.9)' })
@@ -53,12 +52,12 @@ const setActive = (curr: ViElement, last: ViElement | null) => {
   return last = curr
 }
 
-export function course() {
-  // 
 
+
+export function course() {
   let selected:ViElement | null = null
 
-  const sidebar = mdRoutes.map(data => {
+  const sidebarUIList = mdRoutes.map(data => {
     const item = SidebarItem(data)
     item.set(
       {
@@ -73,7 +72,7 @@ export function course() {
 
   // 根据路由显示对应的内容
   const index = mdRoutes.findIndex(item => window.location.hash.includes(item.path))
-  if (index > -1) selected = setActive(sidebar[index], selected)
+  if (index > -1) selected = setActive(sidebarUIList[index], selected)
 
   
   return div(
@@ -85,7 +84,14 @@ export function course() {
       minHeight: '600px',
     },
     [
-      aside(sidebar),
+      aside(
+        css`
+          position: sticky;
+          height: 800px;
+          top: 120px;
+        `,
+        sidebarUIList
+      ),
       routerView(
         mdRoutes.map(item => regRoute(item.path, () => Markdown(item.filePath)))
       )

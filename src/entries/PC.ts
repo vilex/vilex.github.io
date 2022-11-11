@@ -6,6 +6,7 @@ import { aboutUs } from "../pages/aboutUs";
 import { course } from "../pages/course";
 import { home } from "../pages/home";
 
+
 export function PC() {
     return div(
         {

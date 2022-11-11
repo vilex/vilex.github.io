@@ -1,4 +1,4 @@
-import { button, div, h1, img, p } from "vilex"
+import { button, div, h1, img, p, ViHTMLDivElementPart } from "vilex"
 import { router } from "vilex-router"
 import { blockBackgroundColor } from "../color"
 import logoUrl from '../assets/logo.svg'
