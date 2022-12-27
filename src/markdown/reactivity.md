@@ -32,13 +32,12 @@ button(
 如果是要将这个响应式的数据应用到 `vilex` 的节点上时，直接将变量传入即可，不要使用`.value`, 因为这样会失去响应。
 
 
-### store
+### ref
 
-`store` 也是将数据变为响应式，和 `ref` 不同的是， `store` 是将一个对象变为响应式，store 也不会添加额外的 `.value`，使用方式和传入的对象
-一样，下面我们看一个小例子：
+`ref` 还可以将一个对象变为响应式数据
 
 ```typescript
-const data = store({
+const data = ref({
     count : 0
 })
 
@@ -54,7 +53,7 @@ button(`accrual`, {
 对于数组来说，也是一样的
 
 ```typescript
-const arr = store([1,2,3])
+const arr = ref([1,2,3])
 
 p( arr[2] )
 

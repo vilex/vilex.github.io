@@ -6,23 +6,23 @@ specifiers:
   '@types/node': ^18.11.2
   highlight.js: ^11.6.0
   markdown-it: ^13.0.1
-  vilex: 0.0.9
-  vilex-router: ^0.0.5
+  vilex: latest
+  vilex-router: latest
   vite: ^3.1.8
-  vite-vilex: ^0.1.8
+  vite-vilex: latest
 
 dependencies:
   highlight.js: 11.6.0
   markdown-it: 13.0.1
-  vilex: 0.0.9
-  vilex-router: 0.0.5
+  vilex: 0.1.9
+  vilex-router: 0.1.2
 
 devDependencies:
   '@octokit/core': 4.1.0
   '@types/markdown-it': 12.2.3
   '@types/node': 18.11.2
   vite: 3.1.8
-  vite-vilex: 0.1.8
+  vite-vilex: 0.2.2
 
 packages:
 
@@ -741,23 +741,23 @@ packages:
     resolution: {integrity: sha512-isyNax3wXoKaulPDZWHQqbmIx1k2tb9fb3GGDBRxCscfYV2Ch7WxPArBsFEG8s/safwXTT7H4QGhaIkTp9447w==}
     dev: true
 
-  /vilex-router/0.0.5:
-    resolution: {integrity: sha512-VM+2VJ2T+LzPT/+KT6w3aKukDaBck+rHF84WuzIu0sRi7yYemLrLG875quPFSJtAAUIRZ2BtVgiidaA63hbz/g==}
+  /vilex-router/0.1.2:
+    resolution: {integrity: sha512-hPBvueQQHZjAT+yMAqu1H6VYrcM+XmZkLZlMq0jSsBHVanqeyO8Mzl0z5lcxk0MiwR4R6h7USanxwvyR2PFQUw==}
     dependencies:
       history: 5.3.0
-      vilex: 0.0.9
+      vilex: 0.1.9
     dev: false
 
-  /vilex/0.0.9:
-    resolution: {integrity: sha512-JDQPQmP2GYSQXpRl+aiQyPu1f876rKRxzoLOcMD96Hcq4SEeVH2qDNKIboGJTjJnUAw1WkyY9t18RqFV5RQ31w==}
+  /vilex/0.1.9:
+    resolution: {integrity: sha512-dAr8xZcejE5jbZNHF9C0MrgM+wFN7RnVW+LulX5dYaxyI9bmXYPr3Zqgd8Za8+sBOErHZE3YF4IP5bNNDMopnQ==}
     requiresBuild: true
     dependencies:
       csstype: 3.1.1
       stylis: 4.1.3
     dev: false
 
-  /vite-vilex/0.1.8:
-    resolution: {integrity: sha512-t0L/Whsdf3sQVhrK7SuD6ZAdz7DrmdEDrkZOqBYJA4RN7kSkn30tsuBfPnJCybqtapveBRAzLEJ8rGdotlDIZQ==}
+  /vite-vilex/0.2.2:
+    resolution: {integrity: sha512-l2YHqsoa2ljuMwThvSqUPn8f7zmUzevISUfsdwxJGRQXDV0/2gklkqf6UpTiTfgl1KbdMb/pQ8/7yo4nLJnI3A==}
     dependencies:
       '@babel/generator': 7.19.5
       '@babel/parser': 7.19.4

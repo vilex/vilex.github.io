@@ -14,11 +14,11 @@ export function PC() {
         },
         [
             header(),
-            routerView([
-                regRoute('/home', home, true),
+            routerView(
+                regRoute('/', home),
                 regRoute('/d', course),
                 regRoute('/about-us', aboutUs)
-            ])
+            )
         ]
     )
 }

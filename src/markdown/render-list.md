@@ -4,7 +4,7 @@
 所以有可能并不能提前知道渲染的 item 长什么样。比如下面这样：
 
 ```typescript
-const arr = store([])
+const arr = ref([])
 
 ul(
     arr.map(t => li(t))
@@ -15,15 +15,15 @@ arr.push('new item')
 
 可以看到，在运行时，我们拿到只是 arr.map 执行后的结果，这处理起来让我们很难去下手。
 
-### listView
+### list
 
-于是，listView 便出现了，使用它来做一个列表的状态保存，使用方式如下
+于是，list 便出现了，使用它来做一个列表的状态保存，使用方式如下
 
 ```typescript
-const arr = store([])
+const arr = ref([])
 
 ul(
-    listView(arr, t => li(t))
+    list(arr, t => li(t))
 )
 
 arr.push('new item')

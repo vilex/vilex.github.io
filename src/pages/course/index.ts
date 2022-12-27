@@ -43,10 +43,11 @@ const SidebarItemStyle = css`
   }
 `
 const SidebarItem = (data: RouteData) => div( data.title, SidebarItemStyle )
+
   
 const setActive = (curr: ViElement, last: ViElement | null) => {
   if (last) {
-    last.set({ color: 'rgba(0,0,0,.9)' })
+    last.set({ color: null })
   }
   curr.set({ color: '#ff3399'})
   return last = curr
@@ -93,7 +94,7 @@ export function course() {
         sidebarUIList
       ),
       routerView(
-        mdRoutes.map(item => regRoute(item.path, () => Markdown(item.filePath)))
+        ...mdRoutes.map(item => regRoute(item.path, () => Markdown(item.filePath)))
       )
     ]
 
