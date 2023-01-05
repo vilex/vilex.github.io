@@ -49,7 +49,7 @@ div(
 
 ## 定义组件
 
-`defineComponent` 用来定义一个组件，hmr 将会寻找由 `defineComponent` 来定义的组件来进行热更新。开发环境下，也会给此最外层组件添加一个 `v-component-name` 属性。在语法上可以比较明确一个组件的界线。 如果你不使用，除了上面说的三种情况，在运行时不会有任务影响，我们来对比一下使用 `defineComponent` 和不使用 `defineComponent` 的写法
+`defineComponent` 用来定义一个组件，hmr 将会寻找由 `defineComponent` 来定义的组件来进行热更新。开发环境下，也会给此最外层组件添加一个 `v-component-name` 属性。在语法上可以比较明确一个组件的界线。 如果你不使用，除了上面说的三种情况，在运行时不会有任何影响，我们来对比一下使用 `defineComponent` 和不使用 `defineComponent` 的写法
 
 ```typescript
 
