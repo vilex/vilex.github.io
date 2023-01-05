@@ -13,7 +13,9 @@ import  Events  from '../../markdown/events.md'
 import  Reactivity  from '../../markdown/reactivity.md'
 import  List  from '../../markdown/render-list.md'
 import  Router  from '../../markdown/router.md'
+import ComponentNesting from '../../markdown/component-nesting.md'
 import { Markdown } from '../../components/markdown';
+
 
 interface RouteData {
   title: string
@@ -26,6 +28,7 @@ interface RouteData {
 export const mdRoutes: RouteData[] = [
   { title: '快速开始', path: '/d/quick-start', filePath: QuickStart },
   { title: '编写组件', path: '/d/ui', filePath: Component },
+  { title: '嵌套组件', path: '/d/component-nesting', filePath: ComponentNesting},
   { title: '组件属性', path: '/d/props', filePath: Props },
   { title: '组件样式', path: '/d/style', filePath: Style },
   { title: '组件事件', path: '/d/events', filePath: Events },
