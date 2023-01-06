@@ -14,6 +14,7 @@ import  Reactivity  from '../../markdown/reactivity.md'
 import  List  from '../../markdown/render-list.md'
 import  Router  from '../../markdown/router.md'
 import ComponentNesting from '../../markdown/component-nesting.md'
+import ExplainVilex from '../../markdown/explain-vilex.md'
 import { Markdown } from '../../components/markdown';
 
 
@@ -26,6 +27,7 @@ interface RouteData {
 
 
 export const mdRoutes: RouteData[] = [
+  {title: '简介', path: '/d/explain-vlex', filePath: ExplainVilex},
   { title: '快速开始', path: '/d/quick-start', filePath: QuickStart },
   { title: '编写组件', path: '/d/ui', filePath: Component },
   { title: '嵌套组件', path: '/d/component-nesting', filePath: ComponentNesting},
@@ -35,6 +37,7 @@ export const mdRoutes: RouteData[] = [
   { title: '数据响应', path: '/d/reactivity', filePath: Reactivity },
   { title: '列表渲染', path: '/d/render-list', filePath: List },
   { title: '路由组件', path: '/d/routr', filePath: Router },
+
 ]
 
 const SidebarItemStyle = css`
