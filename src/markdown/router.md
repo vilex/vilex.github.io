@@ -25,3 +25,25 @@ routerView 和其它如 `div` 并也没什么区别，也是做一个组件或�
 ```typescript
 router.push('/about')
 ```
+
+## 路由传参
+
+第一步，先定义一个路由组件:
+```typescript
+routerView(
+    regRoute('/foo', (args) => {
+        console.log(args)
+        return div(`存在路由参数`)
+    }),
+    regRoute('/bar', () => {
+        return div(`没有路由参数`)
+    }),
+)
+```
+
+第二步，跳转路由并携带参数：
+```typescript
+router.push('/foo', {name: '我的参数'})
+```
+
+最后可以根据得到参数信息被打印出来
