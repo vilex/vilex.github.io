@@ -6,6 +6,14 @@
 pnpm add vilex-router
 ```
 
+在创建 vilex 应用时，需要将 router 传递给 vilex， 就像下面这样：
+
+```typescript
+createApp(() => div('VilexApp'))
+    .use(createRouter()) // 这里，固定写法
+    .mount('#app')
+```
+
 在我们想要做路由内容切换的地方放置一个 `routerView`
 
 ```typescript
