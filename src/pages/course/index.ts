@@ -16,6 +16,7 @@ import  Router  from '../../markdown/router.md'
 import ComponentNesting from '../../markdown/component-nesting.md'
 import ExplainVilex from '../../markdown/explain-vilex.md'
 import ExtendsElement from '../../markdown/extends_attributes.md'
+import ConditionalRending from '../../markdown/conditional_rending.md'
 import { Markdown } from '../../components/markdown';
 
 
@@ -37,6 +38,7 @@ export const mdRoutes: RouteData[] = [
   { title: '组件事件', path: '/d/events', filePath: Events },
   { title: '数据响应', path: '/d/reactivity', filePath: Reactivity },
   { title: '列表渲染', path: '/d/render-list', filePath: List },
+  { title: '条件渲染', path: '/d/conditional_rending', filePath: ConditionalRending},
   { title: '路由组件', path: '/d/routr', filePath: Router },
   { title: '扩展属性', path: '/d/extends_attributes', filePath: ExtendsElement },
 
